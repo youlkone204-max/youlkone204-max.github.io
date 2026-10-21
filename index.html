@@ -52,7 +52,7 @@ var S={name:"",email:"",plan:"",done:{},lessons:{},best:null,dark:null};
 try{var s=JSON.parse(localStorage.getItem("iac2")||"null");if(s)S=Object.assign(S,s)}catch(e){}
 function save(){try{localStorage.setItem("iac2",JSON.stringify(S))}catch(e){}}
 function theme(){if(S.dark===null)document.documentElement.removeAttribute("data-theme");else document.documentElement.setAttribute("data-theme",S.dark?"dark":"light")}theme();
-var PLAY=false;try{if(/[?&]src=play/.test(location.search)||document.referrer.indexOf("android-app://")===0)sessionStorage.setItem("iac_play","1");PLAY=sessionStorage.getItem("iac_play")==="1"}catch(e){}
+var PLAY=false;try{if(/[?&]src=play/.test(location.search)||document.referrer.indexOf("android-app://com.youl.iacreator")===0)sessionStorage.setItem("iac_play","1");PLAY=sessionStorage.getItem("iac_play")==="1"}catch(e){}
 var app=document.getElementById("app"),nav=document.getElementById("nav");
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 var CO="Facebook|TikTok|YouTube|Vidéo IA|Création de logos|Création d’affiches|Création de vidéos publicitaires|Business IA|Marketing digital|Monétisation Facebook|Monétisation TikTok|Monétisation YouTube|ChatGPT|Création d’avatars IA|Création de musique IA|Création de sites web|Création d’applications|Création d’images IA|Création de CV|Création de cartes de visite|Création de boutiques en ligne".split("|");
