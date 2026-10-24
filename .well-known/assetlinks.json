@@ -1,1 +1,1 @@
-
+[{      "relation": ["delegate_permission/common.handle_all_urls"],      "target": {        "namespace": "android_app",        "package_name": "com.youl.iacreator",        "sha256_cert_fingerprints": ["96:9E:D1:92:C6:86:33:91:C8:3B:58:A8:1B:48:92:EB:BF:8B:79:89:13:A0:7F:8D:E8:4C:55:6B:D1:42:3B:0B"]      }    }]
